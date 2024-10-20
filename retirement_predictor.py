@@ -46,6 +46,7 @@ def collect_user_info():
                     input(f"What is the current balance of {acc_dict['Name']}? $")
                 )
 
+                print(f"\nHow often do you make contributions to {acc_dict['Name']}?")
                 contr_options = {
                     "Daily": 365,
                     "Weekly": 52,

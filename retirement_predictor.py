@@ -17,7 +17,7 @@ def retirement_predictor_main():
 
     predictions = generate_predicted_roi(accounts, after_years, growth_rates)
 
-    generate_plot(predictions, after_years)
+    generate_plot(init_age, predictions, after_years)
 
 
 def collect_user_info():
@@ -111,8 +111,8 @@ def return_on_investment(B, n, M, R, t):
     return BeRt + monthly_growth
 
 
-def generate_plot(predictions, after_years):
-    age = [x + 23 for x in after_years]
+def generate_plot(initial_age, predictions, after_years):
+    age = [x + initial_age for x in after_years]
 
     sns.set_theme()
 

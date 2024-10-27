@@ -1,7 +1,7 @@
 // import React from "react"
 import React, { useState } from 'react'
 import sampleImage from "../../assets/images/SampleGraph.png"
-
+import '../../App.css'
 
 
 function InputComponent() {
@@ -130,31 +130,29 @@ function InputComponent() {
             </div>
 
             {showState == ShowStates.ADD_ACCOUNTS &&
-            // TODO add remove account button
+                // TODO add remove account button
                 <div className="personal-info">
-                    <div className="row g-3 align-items-center">
-                        <div className="col-auto">
-                            <label className="col-form-label">Name</label>
-                        </div>
-                        <div className="col-auto">
+                    <div className="row g-3">
+                        <div className="col-md-8">
+                            {/* <label for="inputUsername" className="col-form-label">Name</label> */}
                             <input
                                 type="text"
                                 name="username"
+                                placeholder='Name'
                                 onChange={(event) => handleUserInfoInputChange(event)}
-                                className="form-control" />
+                                className="form-control"
+                                id="inputUsername" />
                         </div>
-                    </div>
 
-                    <div className="row g-3 align-items-center">
-                        <div className="col-auto">
-                            <label className="col-form-label">Age</label>
-                        </div>
-                        <div className="col-auto">
+                        <div className="col-md-4">
+                            {/* <label for="inputAge" className="col-form-label">Age</label> */}
                             <input
                                 type="number"
                                 name="age"
+                                placeholder='Age'
                                 onChange={(event) => handleUserInfoInputChange(event)}
-                                className="form-control" />
+                                className="form-control"
+                                id="inputAge" />
                         </div>
                     </div>
                 </div>

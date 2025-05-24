@@ -1,0 +1,30 @@
+#root {
+  max-width: 1280px;
+  /* max-width: 80%; */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+.header-div {
+  top: 15%;
+  /* transform: translateX(-50%); */
+  position: relative;
+  /* background-color: red; */
+}
+
+.personal-info {
+  /* flex-direction: column; */
+  /* padding: 10px; */
+  align-items: center;
+  padding-bottom: 50px;
+  /* margin: 5px */
+}
+
+.col-md-6 {
+  color:green;
+
+  left: 0px;
+}
